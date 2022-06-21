@@ -1,0 +1,20 @@
+{
+    "ServiceName": "charris-fasthtmx",
+    "SourceConfiguration": {
+        "AuthenticationConfiguration": {
+            "AccessRoleArn": "arn:aws:iam::500805876079:role/service-role/AppRunnerECRAccessRole"
+        },
+        "AutoDeploymentsEnabled": true,
+        "ImageRepository": {
+            "ImageIdentifier": "500805876079.dkr.ecr.us-east-1.amazonaws.com/charris/fasthtmx:latest",
+            "ImageConfiguration": {
+                "Port": "8000"
+            },
+            "ImageRepositoryType": "ECR"
+        }
+    },
+    "InstanceConfiguration": {
+        "Cpu": "1 vCPU",
+        "Memory": "3 GB"
+    }
+}
