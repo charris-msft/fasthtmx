@@ -33,6 +33,16 @@
     docker tag fasthtmx 500805876079.dkr.ecr.us-east-1.amazonaws.com/charris/fasthtmx:latest
     ```
 
+- Create the ECR repository
+    ```bash
+    aws ecr create-repository --repository-name charris/fasthtmx
+    ```
+
+- Grant permission to the ECR repository
+    ```bash
+    aws ecr create-repository --repository-name 500805876079.dkr.ecr.us-east-1.amazonaws.com/charris/fasthtmx
+    ```
+
 - Push the image to ECR
 
     ```bash
